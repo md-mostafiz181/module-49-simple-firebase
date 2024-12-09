@@ -37,12 +37,14 @@ const Login = () => {
     <div>
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
+            
           {user && (
             <div>
               <h1>User : {user.displayName}</h1>
               <h2>Email: {user.email}</h2>
-              <img src={user.photoURL} alt="" />
+              <img className="w-[300px] h-[300px]" src={user.photoURL} alt="" />
             </div>
+            
           )}
 
           {
@@ -60,6 +62,8 @@ const Login = () => {
           }
 
         </div>
+
+    
       </div>
     </div>
   );
